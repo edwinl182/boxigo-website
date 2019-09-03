@@ -1,75 +1,73 @@
   <?php if($this->router->fetch_class() == 'dashboard'): ?>
+
         </section>
       </div>
     </div>
   <?php endif; ?>
-<footer class="footer footer-default sticky-bottom">
-    <div class="container-fluid">
+<footer class="footer footer-default sticky-bottom p-3">
+    <div class="container-fluid footer-padding">
      <div class="row">
-        <div class="col-sm text-justify ml-5" >
-          <h3 class="info-title pb-2">Contact Us</h3>
-            
-              <i class="fas fa-thumbtack"></i>&nbsp;
-              No 5, 5th Cross,
-              Kalasipalyam New Extension,
-              Behind Farah Complex, JC Road,
-              Bangalore - 560002
-              KARNATAKA <br><br>
-           
-              <i class="fas fa-envelope"></i>&nbsp;
-              support@boxigo.com <br><br>
-            
-              <i class="fas fa-fax"></i>&nbsp;
-              2222 2342 / 2223 4772 <br><br>
-            
-              <i class="fas fa-phone"></i>&nbsp;
-              93428 59689 / 99862 18146
-        </div>
+      
         <div class="col-sm">
-            <h3 class="info-title text-justify pl-2">Important Links</h1>
+            <h4 class="info-title text-justify">About Boxigo</h4> 
               <ul class="navbar-nav text-justify pt-0">
                 <li class="nav-item">
-                  <a href="<?= base_url(); ?>home/aboutus" class="dropdown-toggle nav-link">
+                  <a href="<?= base_url(); ?>home/aboutus" class="dropdown-toggle nav-link pl-0">
                     <!-- <i class="fas fa-users"></i>  -->About Us
                   </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?= base_url(); ?>home/faq" rel="tooltip" title="" data-placement="bottom" >
-                    <!-- <i class="fas fa-question-circle"></i> &nbsp; -->FAQ
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="#">
-                      <!-- <i class="fas fa-hands-helping"></i> &nbsp; -->Customer Support
-                    </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="<?= base_url(); ?>home/forserviceprovider">
-                    <!-- <i class="fab fa-black-tie"></i> &nbsp; -->For Service Provider
+                  <a href="<?= base_url(); ?>home/how_it_works" class="dropdown-toggle nav-link pl-0">
+                    <!-- <i class="fas fa-users"></i>  -->How it works
                   </a>
                 </li>
                 <li class="nav-item">
-                  <?php if($this->session->userdata('user_id')): ?>
-                      <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="<?= base_url();?>logout">
-                        <!-- <i class="fas fa-user-check"></i> &nbsp; -->Logout
-                      </a>
-                  <?php else: ?>
-                    <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="<?= base_url();?>login">
-                      <!-- <i class="fas fa-user-check"></i> &nbsp; -->Login
+                    <a class="nav-link pl-0" href="<?= base_url(); ?>home/faq" rel="tooltip" title="" data-placement="bottom" >
+                    <!-- <i class="fas fa-question-circle"></i> &nbsp; -->FAQ
                     </a>
-                  <?php endif; ?>
+                  </li>
+                <li class="nav-item">
+                    <a class="nav-link pl-0" href="<?= base_url(); ?>home/faq" rel="tooltip" title="" data-placement="bottom" >
+                    <!-- <i class="fas fa-question-circle"></i> &nbsp; -->Privacy Policy
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="<?= base_url(); ?>home/customer_support" class="nav-link pl-0" rel="tooltip" title="" data-placement="bottom" >
+                      <!-- <i class="fas fa-hands-helping"></i> &nbsp; -->Customer Support
+                    </a>
                 </li>
               </ul>
         </div>
-        <div class="col-sm footer-logo">
-            <h1 class='info-title mt-3'>Boxigo</h1>
-            <h4 class='descriiption'>Pack your emotions, with us</h4><br>
+        <div class="col-sm">
+            <h4 class="info-title text-justify">Partnership</h4> 
+              <ul class="navbar-nav text-justify pt-0">
+                <li class="nav-item">
+                  <a class="nav-link pl-0" rel="tooltip" title="" data-placement="bottom" href="<?= base_url(); ?>home/forserviceprovider">
+                    <!-- <i class="fab fa-black-tie"></i> &nbsp; -->Vedor Registration
+                  </a>
+                </li>
+              </ul>
+              <ul class="navbar-nav text-justify pt-0">
+                <li class="nav-item">
+                  <a class="nav-link pl-0" rel="tooltip" title="" data-placement="bottom" href="<?= base_url(); ?>home/forserviceprovider">
+                    <!-- <i class="fab fa-black-tie"></i> &nbsp; -->Vedor Agreement
+                  </a>
+                </li>
+              </ul>
+        </div>
+
+        <div class="col-sm-3">
+            <div id="map"></div>
+        </div>
+        <div class="col-sm-3 footer-logo d-flex justify-content-top align-items-center flex-column">
+            <h2 class='info-title mt-3'>Boxigo</h2>
+            <h4 class='descriiption'>Pack your emotions, with us</h4>
             <p>follow us on</p>
             <div class="footer-logo text-center">
-                <i class="fab fa-instagram footer-logo m-4 "></i>
-                <i class="fab fa-facebook-f footer-logo m-4"></i>
-                <i class="fab fa-linkedin-in footer-logo m-4 "></i>
-                <i class="fab fa-twitter footer-logo m-4 "></i>
+                <i class="fab fa-instagram footer-logo m-2 "></i>
+                <i class="fab fa-facebook-f footer-logo m-2"></i>
+                <i class="fab fa-linkedin-in footer-logo m-2 "></i>
+                <i class="fab fa-twitter footer-logo m-2 "></i>
             </div>
         </div>
      </div>
@@ -89,6 +87,8 @@
   <script src="<?= base_url(); ?>includes/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
   <script src="<?= base_url(); ?>includes/js/plugins/moment.min.js"></script>
 
+  
+
   <!--	Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
   <script src="<?= base_url(); ?>includes/js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script>
   <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
@@ -98,6 +98,8 @@
   <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
   <script src="<?= base_url(); ?>includes/js/material-kit.js?v=2.0.5" type="text/javascript"></script>
   <script src="<?= base_url(); ?>includes/js/script.js" type="text/javascript"></script>
+
+ 
 </body>
 
 </html>
